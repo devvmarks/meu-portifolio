@@ -1,4 +1,8 @@
 :root {
-    --max-width-size:1920px;
+    --max-width-size: 1920px;
     --title-color: #333;
+    --header-color: coral;
+    --header-background-color: rgb(255, 255, 255);
+    --about-background-color: #141414;
+    --size: 60px;
 }

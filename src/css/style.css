@@ -1,6 +1,7 @@
 body {
     font-family: 'Public Sans', sans-serif;
     grid-template-areas: 'header header header'
+        'hero hero hero'
         'about about about';
     grid-template-columns: repeat(4, 1fr);
 }
@@ -15,7 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: var(--header-background-color);
 
 
 }
@@ -29,24 +30,33 @@ body {
 .header .header-container .menu {
     display: flex;
 
-
 }
 
 .header .header-container .menu li a {
     padding: 10px 30px;
     font-size: 18px;
-    color: coral;
+    color: var(--header-color);
 }
 
 .header .header-container .menu li a:hover {
-    background-color: coral;
+    background-color: var(--header-color);
     color: #000000;
     border-radius: 15px;
 }
 
+
+.hero {
+    grid-area: hero;
+    height: 86vh;
+    background: url(../images/background-hero.jpg) center center no-repeat;
+}
+
+
+
+
 .about {
-    height: 89vh;
-    background: url(../images/background-about.jpg) center center no-repeat;
+    height: 59vh;
+    background: var(--about-background-color) center center no-repeat;
     background-size: cover;
     max-width: var(--max-width-size);
     display: grid;
@@ -60,11 +70,9 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
-.about .info-content {
-    color: #ffffff;
-}
 
-.about .card {
+
+.about .content .card {
     width: 247px;
     height: 329px;
     background: #f5f5f5;
@@ -85,7 +93,6 @@ body {
 
 /*Image*/
 .about .card .card-info .card-avatar {
-    --size: 60px;
     background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
     width: var(--size);
     height: var(--size);
@@ -139,7 +146,7 @@ body {
 /*Hover*/
 .card:hover {
     box-shadow: 15px 15px 30px #bebebe,
-        -15px -15px 30px #ffffff;
+        -15px -15px 30px #bebebe;
 }
 
 .card:hover .card-info {
@@ -153,12 +160,12 @@ body {
 
 .about .card .card-social .card-social__item i:hover {
     font-size: 18px;
-    transform: scale(1.1);
+    transform: scale(1.2);
     color: #000000;
 }
 
 .about .card .card-info .card-avatar:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .about .content.info-content {
@@ -166,7 +173,7 @@ body {
     flex-direction: column;
 }
 
-.about .content.info-content h1 {
+.about .content.info-content h2 {
     font-size: 35px;
     padding-bottom: 15px;
     color: var(--title-color);
