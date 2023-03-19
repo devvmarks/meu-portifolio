@@ -22,9 +22,9 @@ body {
 }
 
 .header .header-container .logo {
-    padding: 45px;
+    padding: 30px;
     font-size: 24px;
-    color: var(--title-color)
+    color: #ffffff
 }
 
 .header .header-container .menu {
@@ -33,7 +33,7 @@ body {
 }
 
 .header .header-container .menu li a {
-    padding: 10px 30px;
+    padding: 10px 35px;
     font-size: 18px;
     color: var(--header-color);
 }
@@ -48,21 +48,58 @@ body {
 .hero {
     grid-area: hero;
     height: 86vh;
+    background-color: #000000;
     background: url(../images/background-hero.jpg) center center no-repeat;
 }
 
+.hero .hero-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 86vh;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
 
+.hero .hero-info:hover {
+    transform: translateY(-4%);
+    opacity: 1;
+}
+
+.hero .hero-info .hero-title {
+    padding: 30px;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.hero .hero-info a {
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.hero .hero-info a:hover {
+    background-color: #53FFAB;
+    color: #000000;
+    border-radius: 20px;
+}
 
 
 .about {
+    grid-area: about;
     height: 59vh;
-    background: var(--about-background-color) center center no-repeat;
+    background-color: var(--about-background-color);
     background-size: cover;
     max-width: var(--max-width-size);
     display: grid;
-    grid-area: about;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+
 }
 
 .about .content {
@@ -112,12 +149,9 @@ body {
 .about .card .card-info .card-subtitle {
     color: #859ba8;
     font-size: 11.5px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0 8px 0 8px;
 }
 
-
-/*Card footer*/
 .about .card .card-social {
     transform: translateY(200%);
     display: flex;
@@ -125,6 +159,7 @@ body {
     width: 100%;
     opacity: 0;
     transition: transform .2s ease, opacity .2s ease;
+    background: url(../images/pattern-divider-desktop.svg);
 }
 
 .about .card .card-social .card-social__item {
@@ -132,6 +167,7 @@ body {
     flex: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 15px;
 }
 
 .about .card .card-social .card-social__item i {
