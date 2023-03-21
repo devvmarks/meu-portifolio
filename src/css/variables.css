@@ -1,8 +1,15 @@
 :root {
+    /* * */
+    --title-font: 'Poppins', sans-serif;
+    --text-font: 'Quicksand', sans-serif;
     --max-width-size: 1920px;
-    --title-color: #636262;
-    --header-color:  #53FFAB;
+    --title-color: #191522;
+    --size: 150px;
+
+    /* about */
+    --about-background-color: #191522;
+
+    /* header */
+    --header-color: #ffffff;
     --header-background-color: rgb(0, 0, 0);
-    --about-background-color: #000000;
-    --size: 60px;
 }

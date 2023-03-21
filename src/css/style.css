@@ -1,15 +1,12 @@
 body {
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     grid-template-areas: 'header header header'
-        'hero hero hero'
-        'about about about';
-    grid-template-columns: repeat(4, 1fr);
+        'hero hero hero';
 }
 
 .header {
-    font-weight: 700;
     grid-area: header;
-
 }
 
 .header .header-container {
@@ -22,9 +19,13 @@ body {
 }
 
 .header .header-container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
     font-size: 24px;
-    color: #ffffff
+    font-family: var(--title-font);
+    color: #ffffff;
 }
 
 .header .header-container .menu {
@@ -39,8 +40,7 @@ body {
 }
 
 .header .header-container .menu li a:hover {
-    background-color: var(--header-color);
-    color: #000000;
+    color: #53FFAB;
     border-radius: 15px;
 }
 
@@ -69,7 +69,8 @@ body {
 
 .hero .hero-info .hero-title {
     padding: 30px;
-    font-size: 35px;
+    font-size: 40px;
+    font-family: var(--title-font);
     color: #ffffff;
 }
 
@@ -87,144 +88,4 @@ body {
     background-color: #53FFAB;
     color: #000000;
     border-radius: 20px;
-}
-
-
-.about {
-    grid-area: about;
-    height: 59vh;
-    background-color: var(--about-background-color);
-    background-size: cover;
-    max-width: var(--max-width-size);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-
-}
-
-.about .content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
-.about .content .card {
-    width: 247px;
-    height: 329px;
-    background: #f5f5f5;
-    padding: 32px 24px;
-    transition: box-shadow .3s ease, transform .2s ease;
-    border-radius: 20px;
-    flex-wrap: wrap;
-
-}
-
-.about .card .card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: transform .2s ease, opacity .2s ease;
-}
-
-/*Image*/
-.about .card .card-info .card-avatar {
-    background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    transition: transform .2s ease;
-    margin-bottom: 16px;
-}
-
-/*Text*/
-.about .card .card-info .card-title {
-    color: var(--title-color);
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 32px;
-}
-
-.about .card .card-info .card-subtitle {
-    color: #859ba8;
-    font-size: 11.5px;
-    padding: 0 8px 0 8px;
-}
-
-.about .card .card-social {
-    transform: translateY(200%);
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    opacity: 0;
-    transition: transform .2s ease, opacity .2s ease;
-    background: url(../images/pattern-divider-desktop.svg);
-}
-
-.about .card .card-social .card-social__item {
-    list-style: none;
-    flex: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 15px;
-}
-
-.about .card .card-social .card-social__item i {
-    display: block;
-    height: 18px;
-    width: 18px;
-    color: #5d6c74;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-/*Hover*/
-.card:hover {
-    box-shadow: 15px 15px 30px #bebebe,
-        -15px -15px 30px #bebebe;
-}
-
-.card:hover .card-info {
-    transform: translateY(-5%);
-}
-
-.card:hover .card-social {
-    transform: translateY(100%);
-    opacity: 1;
-}
-
-.about .card .card-social .card-social__item i:hover {
-    font-size: 18px;
-    transform: scale(1.2);
-    color: #000000;
-}
-
-.about .card .card-info .card-avatar:hover {
-    transform: scale(1.2);
-}
-
-.about .content.info-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.about .content.info-content h2 {
-    font-size: 35px;
-    padding-bottom: 15px;
-    color: var(--title-color);
-}
-
-.about .content.info-content p {
-    font-size: 18px;
-    color: #000000;
-    line-height: 22px;
-}
-
-.about .content.info-content .card {
-    width: 600px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
