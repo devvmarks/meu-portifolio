@@ -1,5 +1,4 @@
 body {
-    font-family: 'Poppins', sans-serif;
     font-family: 'Quicksand', sans-serif;
     grid-template-areas: 'header header header'
         'hero hero hero';
@@ -47,7 +46,7 @@ body {
 
 .hero {
     grid-area: hero;
-    height: 86vh;
+    min-height: 89vh;
     background-color: #000000;
     background: url(../images/background-hero.jpg) center center no-repeat;
 }

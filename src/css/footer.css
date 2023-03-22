@@ -3,9 +3,7 @@
     grid-template-columns: 1fr;
     grid-template-areas: " copyright email telefone redes-sociais";
     align-items: center;
-
     height: 20vh;
-
 }
 
 .copyright p {
@@ -52,7 +50,6 @@
 .item.socials h2 {
     padding: 5px 60px;
 }
-
 
 .item.socials .socials-content {
     display: flex;
