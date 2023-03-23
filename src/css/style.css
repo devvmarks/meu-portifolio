@@ -22,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    font-size: 24px;
+    font-size: 20px;
     font-family: var(--title-font);
     color: #ffffff;
 }
@@ -34,7 +34,7 @@ body {
 
 .header .header-container .menu li a {
     padding: 10px 35px;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--header-color);
 }
 

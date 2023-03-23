@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    font-size: 24px;
+    font-size: 20px;
     font-family: var(--title-font);
     color: #ffffff;
 }
@@ -26,7 +26,7 @@ body {
 
 .header .header-container .menu li a {
     padding: 10px 35px;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--header-color);
 }
 
@@ -68,6 +68,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     background-color: white;
     color: black;
+    border-radius: 20px;
 }
 
 .projects .content .card .card-info {
