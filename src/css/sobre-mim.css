@@ -85,7 +85,8 @@ body {
 
 /*Image*/
 .about .card .card-info .card-avatar {
-    background: url(../images/pfp.png) center center no-repeat;
+    background: url(../images/pfp2.jpg) center center no-repeat;
+    background-size: cover;
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
