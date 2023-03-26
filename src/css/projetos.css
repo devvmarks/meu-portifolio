@@ -31,7 +31,7 @@ body {
 }
 
 .header .header-container .menu li a:hover {
-    color: #53FFAB;
+    color: var(--header-hover-color);
     border-radius: 15px;
 }
 
@@ -69,6 +69,7 @@ body {
     background-color: white;
     color: black;
     border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
 }
 
 .projects .content .card .card-info {
@@ -79,13 +80,13 @@ body {
 }
 
 .projects .content .card .card-info a h2 {
-    border-left: 6px solid #53FFAB;
+    border-left: 6px solid #0262b6;
     padding-left: 10px;
 
 }
 
 .projects .content .card .card-info h3 {
-    border-left: 6px solid #53FFAB;
+    border-left: 6px solid #0262b6;
     padding-left: 10px;
 }
 
@@ -94,6 +95,6 @@ body {
     font-weight: 400;
 }
 
-.card a {
-    background: url(../images/) center center no-repeat;
+.card .project-image-1 {
+    background: url(../images/1338423.jpg) center center no-repeat;
 }

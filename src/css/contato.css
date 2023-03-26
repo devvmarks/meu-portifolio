@@ -31,7 +31,7 @@ body {
 }
 
 .header .header-container .menu li a:hover {
-    color: #53FFAB;
+    color: var(--header-hover-color);
     border-radius: 15px;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 .login-box .user-box textarea:focus {
-    border-bottom: 1.5px solid #53FFAB;
+    border-bottom: 1.5px solid #0262b6;
 }
 
 .login-box .user-box input {
@@ -127,7 +127,7 @@ body {
 }
 
 .login-box .user-box input:focus {
-    border-bottom: 1.5px solid #53FFAB;
+    border-bottom: 1.5px solid #0262b6;
 }
 
 .login-box .user-box label {
@@ -174,10 +174,10 @@ body {
     background: #191522;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #53FFAB,
-        0 0 25px #53FFAB,
-        0 0 50px #53FFAB,
-        0 0 100px #53FFAB;
+    box-shadow: 0 0 5px #0262b6,
+        0 0 25px #0262b6,
+        0 0 50px #0262b6,
+        0 0 100px #0262b6;
 }
 
 .login-box a span {
@@ -201,6 +201,6 @@ body {
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #53FFAB);
+    background: linear-gradient(90deg, transparent, #0262b6);
     animation: btn-anim1 2.5s linear infinite;
 }

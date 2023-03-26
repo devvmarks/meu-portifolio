@@ -3,13 +3,13 @@
     --title-font: 'Poppins', sans-serif;
     --text-font: 'Quicksand', sans-serif;
     --max-width-size: 1920px;
-    --title-color: #191522;
+    --title-color: #000000;
     --size: 150px;
 
-    /* about */
-    --background-color: #191522;
+    --background-color: linear-gradient(to bottom, #0c1331 0%, #073e81 80%, #0262b6 100%);
 
     /* header */
     --header-color: #ffffff;
+    --header-hover-color: #0262b6;
     --header-background-color: rgb(0, 0, 0);
 }

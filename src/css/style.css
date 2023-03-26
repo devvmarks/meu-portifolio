@@ -39,7 +39,7 @@ body {
 }
 
 .header .header-container .menu li a:hover {
-    color: #53FFAB;
+    color: var(--header-hover-color);
     border-radius: 15px;
 }
 
@@ -80,11 +80,12 @@ body {
     font-weight: 400;
     font-size: 20px;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
+    opacity: 0.5;
 }
 
 .hero .hero-info a:hover {
-    background-color: #53FFAB;
-    color: #000000;
+    background-color: var(--header-hover-color);
     border-radius: 20px;
+    opacity: 1;
 }
