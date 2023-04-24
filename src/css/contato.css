@@ -60,7 +60,7 @@ body {
     margin-top: 100px;
     padding: 50px 70px;
     transform: translate(-50%, -50%);
-    background: rgba(34, 30, 30, 0.987);
+    background: rgba(255, 255, 255, 0.987);
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
 }
@@ -99,36 +99,32 @@ body {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000000;
     outline: none;
     background: transparent;
     transition: 1s ease-in-out;
     resize: none;
 }
 
-.login-box .user-box textarea:focus {
-    border-bottom: 1.5px solid #0262b6;
-}
+
 
 .login-box .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000000;
     outline: none;
     background: transparent;
     transition: 1s ease-in-out;
 }
 
-.login-box .user-box input:focus {
-    border-bottom: 1.5px solid #0262b6;
-}
+
 
 .login-box .user-box label {
     position: absolute;
@@ -136,7 +132,7 @@ body {
     left: 0;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     pointer-events: none;
     transition: .5s;
 }
@@ -145,15 +141,13 @@ body {
 .login-box .user-box input:valid~label {
     top: -20px;
     left: 0;
-    color: #bdb8b8;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .login-box .user-box textarea:focus~label,
 .login-box .user-box textarea:valid~label {
     top: -20px;
     left: 0;
-    color: #ffffff;
     font-size: 12px;
 }
 
@@ -161,7 +155,7 @@ body {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
     text-transform: uppercase;
     overflow: hidden;
@@ -171,13 +165,11 @@ body {
 }
 
 .login-box a:hover {
-    background: #191522;
-    color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #0262b6,
+    box-shadow: 0 0 5px #202de2,
         0 0 25px #0262b6,
-        0 0 50px #0262b6,
-        0 0 100px #0262b6;
+        0 0 50px #3781c2,
+        0 0 100px #00a2ff;
 }
 
 .login-box a span {
