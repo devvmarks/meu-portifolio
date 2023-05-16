@@ -36,7 +36,7 @@ body {
 }
 
 
-.about {
+.about- {
     min-height: 89vh;
     background: var(--background-color);
     display: flex;
@@ -44,14 +44,14 @@ body {
     justify-content: center;
 }
 
-.about .content {
+.about- .content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 
-.about .content .card {
+.about- .content .card {
     width: 295px;
     height: 440px;
     background: #f5f5f5;
@@ -62,11 +62,11 @@ body {
 
 }
 
-.about .content .card:hover {
+.about- .content .card:hover {
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
 }
 
-.about .card .card-info {
+.about- .card .card-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,12 +79,12 @@ body {
 }
 
 
-.about .card .card-info h1 {
+.about- .card .card-info h1 {
     font-family: var(--title-font);
 }
 
 /*Image*/
-.about .card .card-info .card-avatar {
+.about- .card .card-info .card-avatar {
     background: url(../images/pfp2.jpg) center center no-repeat;
     background-size: cover;
     width: var(--size);
@@ -94,12 +94,12 @@ body {
     margin: 20px 15px 40px;
 }
 
-.about .card .card-info .card-avatar:hover {
+.about- .card .card-info .card-avatar:hover {
     transform: scale(1.1);
 }
 
 /*Text*/
-.about .card .card-info .card-title {
+.about- .card .card-info .card-title {
     font-family: var(--title-font);
     color: var(--title-color);
     font-size: 20px;
@@ -107,13 +107,13 @@ body {
     line-height: 32px;
 }
 
-.about .card .card-info .card-subtitle {
+.about- .card .card-info .card-subtitle {
     color: #859ba8;
     font-size: 13.5px;
     padding: 0 8px 0 8px;
 }
 
-.about .card .card-social {
+.about- .card .card-social {
     transform: translateY(200%);
     display: flex;
     justify-content: space-around;
@@ -127,7 +127,7 @@ body {
     opacity: 1;
 }
 
-.about .card .card-social .card-social__item {
+.about- .card .card-social .card-social__item {
     list-style: none;
     display: grid;
     flex: 0;
@@ -136,7 +136,7 @@ body {
     font-size: 18px;
 }
 
-.about .card .card-social .card-social__item i {
+.about- .card .card-social .card-social__item i {
     display: block;
     height: 18px;
     width: 18px;
@@ -145,30 +145,30 @@ body {
     transition: 0.3s ease;
 }
 
-.about .card .card-social .card-social__item i:hover {
+.about- .card .card-social .card-social__item i:hover {
     font-size: 20px;
     transform: scale(1.2);
     color: #073e81
 }
 
-.about .content.info-content {
+.about- .content.info-content {
     display: flex;
     flex-direction: column;
 }
 
-.about .content.info-content h1 {
+.about- .content.info-content h1 {
     font-size: 35px;
     padding-bottom: 15px;
     color: var(--title-color);
 }
 
-.about .content.info-content p {
+.about- .content.info-content p {
     font-size: 18px;
     color: #000000;
     line-height: 22px;
 }
 
-.about .content.info-content .card {
+.about- .content.info-content .card {
     width: 600px;
     height: auto;
     display: flex;

@@ -1,60 +1,89 @@
-.footer {
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #050505;
+}
+
+footer .container {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: " copyright email telefone redes-sociais";
-    align-items: center;
-    height: 20vh;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
 }
 
-.copyright p {
-    grid-area: copyright;
-    font-size: 14px;
-    justify-content: flex-start;
-    margin: 25px;
+footer .container .about p {
+    max-width: 600px;
 }
 
-.footer .contact {
-    display: flex;
-    justify-content: flex-end;
+footer .container .sec h2 {
+    position: relative;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
-.footer .contact .item {
-    font-size: 14px;
-    margin: 0 20px;
+footer .container .sec p {
+    color: #ffffff;
 }
 
-.footer .contact .item h2 {
-    font-size: 16px;
+footer .container .sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
 }
 
-.item.email {
-    grid-area: email;
+footer .container .sci li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #111;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
-.item.email h2 {
-    padding: 5px 80px;
+footer .container .sci li a i {
+    color: #ffffff;
+    font-size: 20px;
 }
 
-.item.number {
-    grid-area: telefone;
+footer .container .quicklinks {
+    position: relative;
 }
 
-.item.number h2 {
-    padding: 5px 20px;
+footer .container .quicklinks ul li a {
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
-.item.socials {
-    grid-area: redes-sociais;
+footer .container .contact .info {
+    position: relative;
 }
 
-.item.socials h2 {
-    padding: 5px 60px;
+footer .container .contact .info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
 }
 
-.item.socials .socials-content {
-    display: flex;
+footer .container .contact .info li span {
+    color: #ffffff;
+    font-size: 20px;
 }
 
-.item.socials .socials-content .item {
-    font-size: 16px;
+footer .container .contact .info li a {
+    color: #ffffff;
+}
+
+.copyright-text {
+    width: 100%;
+    background: #050505;
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }

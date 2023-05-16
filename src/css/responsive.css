@@ -1,0 +1,35 @@
+/* FOOTER */
+/* FOOTER */
+@media(max-width:991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .copyright-text {
+        padding: 20px 40px 30px;
+    }
+}
+
+@media(max-width:768px) {
+
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media(max-width:425px) {
+
+    body{
+        min-width: 600px;
+    }
+    }
